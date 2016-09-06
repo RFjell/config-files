@@ -258,8 +258,8 @@ globalkeys = awful.util.table.join(
     -- My stuff
     awful.key({ modkey            }, "Print", function() awful.util.spawn("scrot")      end),
     awful.key({ modkey            }, "z",     function() awful.util.spawn("slock") awful.util.spawn("sleep 1; xset dpms force off") end),
-    awful.key({                   }, "XF86MonBrightnessDown", function() awful.util.spawn("xbacklight -dec 10")      end),
-    awful.key({                   }, "XF86MonBrightnessUp", function() awful.util.spawn("xbacklight -inc 10")      end),
+    awful.key({                   }, "XF86MonBrightnessDown", function() awful.util.spawn("xbacklight -dec 5")      end),
+    awful.key({                   }, "XF86MonBrightnessUp", function() awful.util.spawn("xbacklight -inc 5")      end),
     awful.key({                   }, "XF86AudioRaiseVolume", function() awful.util.spawn("amixer -q set Master 10%+")      end),
     awful.key({                   }, "XF86AudioLowerVolume", function() awful.util.spawn("amixer -q set Master 10%-")      end),
     awful.key({                   }, "XF86AudioMute", function() awful.util.spawn("amixer -q set Master toggle")      end),
@@ -396,6 +396,8 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
+    { rule = { class = "Gvim" },
+      properties = { size_hints_honor = false } },
     { rule = { class = "Xfce4-terminal" },
       properties = { 
 	      size_hints_honor = false,
