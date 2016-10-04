@@ -51,5 +51,5 @@ GIT_PS1_HIDE_IF_PWD_IGNORED=1
 #PS1='[\[\033[1;31m\]\u\[\033[0m\]@\h \[\033[1m\]\W\[\033[0m\]]\$ '
 #PS1='${RESET}${RED}${BOLD}\u${RESET}@${BOLD}\h ${YELLOW}\w${RESET} ${MAGENTA}$(__git_ps1 " (%s)")${RESET} $(prompt_status) \n\$ '
 #PS1='${RESET}${RED}${BOLD}\u${RESET}@${BOLD}\h ${YELLOW}\w${RESET} ${MAGENTA}$(__git_ps1 " (%s)")${RESET}\n\$ '
-PS1='${RESET}${RED}${BOLD}\u${RESET}@${BOLD}\h ${YELLOW}\w${RESET} ${MAGENTA}$(__git_ps1 " (%s)")${RESET}\n${WHITE}\$${RESET} '
+PS1='${RESET}${RED}${BOLD}\u${RESET}@${BOLD}\h ${YELLOW}\w${RESET} ${MAGENTA}$(__git_ps1 " (%s)")${RESET}\n\[${WHITE}\]\$\[${RESET}\] '
 

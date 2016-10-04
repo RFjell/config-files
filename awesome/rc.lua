@@ -298,7 +298,7 @@ globalkeys = awful.util.table.join(
               end),
     -- Menubar
     awful.key({ modkey }, "c", function() menubar.show() end),
-    awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run -nb Black -nf Gray -sb Black -sf White ") end)
+    awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run -fn '-*-inconsolata-bold-*-*-*-*-*-*-*-*-*-*-*' -nb Black -nf Gray -sb Black -sf White ") end)
 )
 
 clientkeys = awful.util.table.join(
