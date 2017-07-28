@@ -1,5 +1,5 @@
 #!/bin/sh
 
-dir="/home/robban/.xmonad/wallpapers/"
+dir="/home/robban/wp/"
 feh --bg-scale --randomize "$dir"
 

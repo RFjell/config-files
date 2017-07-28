@@ -11,6 +11,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
+Plugin '2072/PHP-Indenting-for-VIm'
 call vundle#end()
 filetype plugin indent on     " required! 
 
@@ -24,6 +25,7 @@ syntax on
 
 set tabstop=4
 set autoindent
+set shiftwidth=4
 
 " Empty space at the bottom of gVim windows
 " When using a window manager configured to ignore window size hints, gVim will fill the non-functional area with the GTK theme background color. 
@@ -49,7 +51,8 @@ au BufNewFile,BufRead *.py
 	\ set textwidth=79 |
 	\ set expandtab |
 	\ set autoindent |
-	\ set fileformat=unix
+	\ set fileformat=unix |
+	\ map <F5> :w<CR>:!python %<CR>
 
 " html, javascript, css
 au BufNewFile,BufRead *.js,*.html,*.css

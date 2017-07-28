@@ -12,7 +12,8 @@ alias ..='cd ..'
 alias da='date "+%A, %d %B %Y [%T]"'
 alias ll='ls -lh'
 alias japanify='export LANG=ja_JP.UTF-8'
-alias feh='feh -F -rSfilename'
+alias feh='feh -Z -F -rSfilename'
+alias pretty='python -m json.tool  |less'
 
 export GREP_COLOR="1;32"
 export WINEPREFIX=$HOME/.wine/
